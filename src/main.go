@@ -62,7 +62,7 @@ func main() {
 	mux.HandleFunc("POST /api/revoke", apiCfg.revokeHandler)
 
 	server := &http.Server{
-		Addr:    ":8082",
+		Addr:    ":8080",
 		Handler: mux,
 	}
 
